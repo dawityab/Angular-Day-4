@@ -1,0 +1,16 @@
+
+<div class="container-fluid">
+    <div class="row" >
+        <h2 class="title">Blog content</h2>
+        <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let blog of blogs">
+            
+           
+            <p class="text-muted"> Published on - {{blog.date}}</p>
+            <p class="text-muted">{{blog.place }}<span><img class="blogger-img"src="{{ blog.image}}" alt="Blogger Image"></span></p>
+            <p class=" text-muted">Published by -  {{blog.bloger}}</p>
+           
+            <p class=" text-dark fs-6 "> {{blog.blogContent}}</p>
+           
+    </div>
+</div>
+    </div>
